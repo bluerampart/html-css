@@ -6,7 +6,7 @@
             .container{
                 display: flex;
                 flex-direction: row;  /* column column-reverse row-reverse*/
-                flex-wrap: wrap; /*모바일 전용 페이지를 쉽게 구축할 수 있음*/
+                flex-wrap: wrap; /*모바일 전용 페이지를 쉽게 구축할 수 있음. 반응형으로 아이템이 자동으로 배치됨. */
                 justify-content: flex-start; /*flex-wrap 했을 때 content 위치*/
                 background-color: aqua;
                 padding: 10px;
@@ -16,7 +16,7 @@
                 width: 100px;
                 border: 2px dotted royalblue;
                 background-color: yellow;
-                flex-grow: 1; /* 아이템들이 알아서 공간 차지함. 1:1:1 이런느낌??..*/
+                flex-grow: 1; /* 아이템들이 알아서 빈 공간을 효율적으로 차지함. 1:1:1 이런느낌.*/
             }
         </style>
 
