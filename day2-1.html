@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+
+            .parent{
+                border: 4px solid blue;
+            }
+
+            .child{
+                border: 4px solid red;
+                position: fixed;  /*relative fixed absolute*/
+                top: 80px;
+                left: 80px;
+            }
+            .container{
+                width : 710px;
+                border: 2px dotted royalblue;
+            }
+            header{
+                border-bottom: 2px dotted royalblue;
+            }
+
+            nav{
+                float: left;
+                width: 120px;
+               }
+
+            .nav{
+                float: right;
+                width: 120px;
+            }
+
+            article{
+                float: left;
+                width: 460px;
+                border-left: 2px dotted royalblue;
+                border-right: 2px dotted royalblue;
+            }
+
+            footer{
+                text-align: center;
+                clear: both;
+                border-top: 2px dotted royalblue;
+                padding: 10px;
+            }
+         
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Day2</h1>
+            </header>
+
+            <nav>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+            </nav>
+
+            <div class="nav">
+                <ol>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ol>
+            </div>
+
+        
+            <article>
+                The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or an editorial production whose final text is not yet ready.
+
+This expedient serves to get an idea of the finished product that will soon be printed or disseminated via digital channels.
+
+
+In order to have a result that is more in keeping with the final result, the graphic designers, designers or typographers report the Lorem ipsum text in respect of two fundamental aspects, namely readability and editorial requirements.
+
+The choice of font and font size with which Lorem ipsum is reproduced answers to specific needs that go beyond the simple and simple filling of spaces dedicated to accepting real texts and allowing to have hands an advertising/publishing product, both web and paper, true to reality.
+            </article>
+            
+         
+            
+
+
+            <footer>
+                Samsung x Fast Campus
+            </footer>
+        </div>
+
+
+        
+        <hr>
+
+        <div>
+            <div style="float:left; border:2px solid black">1-1</div>
+        </div>
+        <div>
+            <div style="float:left; border:2px solid black">1-2</div>
+        </div>
+        <div>
+            <div style="float:left; border:2px solid black">1-3</div>
+        </div>
+        <div style="clear:both;">
+            <div style="float:left; border:2px solid black">2-1</div>
+        </div>
+        <div>
+            <div style="float:left; border:2px solid black">2-2</div>
+        </div>
+        <div>
+            <div style="float:left; border:2px solid black">2-3</div>
+        </div>
+        <div style="clear:both;">
+            <div style="float:left; border:2px solid black">3-1</div>
+        </div>
+        <div>
+            <div style="float:left; border:2px solid black">3-2</div>
+        </div>
+        <div>
+            <div style="float:left; border:2px solid black">3-3</div>
+        </div>
+
+        <br>
+        <hr>
+        
+        <div class="parent">
+            parent
+        
+            <div class="child">child</div>
+        
+        </div>
+
+
+
+
+
+    </body>
+</html>

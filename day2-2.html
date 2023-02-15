@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                border: 4px solid royalblue;
+            }
+
+            @media (min-width: 700px) and (max-width: 800px){
+                .container{
+                    border: 4px dotted red;
+                }
+            }
+
+
+            body{
+                background-color: orange;
+            }
+
+            @media (max-width: 800px){
+                body{
+                    background-color: red;
+                }
+            }
+
+
+
+            @media (min-width: 1024px){
+                body{
+                    background-color: yellow;
+                }
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">Hello World</div>
+    </body>
+</html>

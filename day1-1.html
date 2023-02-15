@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+
+            /*
+            button{
+                color: blue;
+                width: 100px;
+            }
+            */
+
+            h1{color: darkseagreen;}
+            h2, h3{color: hotpink;}
+
+            div > h1 {color:red ;}
+            main > h1 {color: indigo;}
+            
+            /* 점 찍으면 클래스 선택자 */
+
+            .samsung{
+                color: blue;
+              
+            }
+
+
+            div > .samsung{
+                color: blueviolet;
+            }
+
+
+
+            /* span 태그가 클래스를 test로 가지는 경우*/
+            span.test{
+                color: red;
+            }
+
+            /* span 태그의 자식 태그가 클래스를 test로 가지는 경우*/
+            span >.test{
+                color: aquamarine;
+            }
+
+
+            .longbutton{
+                width: 100px;
+            }
+
+            .shortbutton{
+                width: 50px;
+            }
+
+
+            /* # 찍으면 id 선택자. 문서에서 유일. 잘 안 씀?!*/
+
+            #my_button{
+                color: aqua;
+            }
+
+            /* 가상선택자: 버튼위에 마우스 오버 했을 때의 스타일*/
+            button:hover{
+                color: red;
+            }
+            
+            /* 가상선택자: 버튼 누르고 있을 때의 스타일 */
+            
+            button:active{
+                color: blue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <span class="test">
+            안녕하세요.
+        </span>
+
+        <span>
+            <button class="test">큰 버튼</button>
+            
+        </span>
+        <br>
+        <button id="my_button">내 버튼</button>
+
+
+        <p class="samsung">
+            내가 정의한 클래스 선택자 samsung
+        </p>
+        <h1> 헤딩 레벨 1</h1>
+        <h2> 헤딩 레벨 2</h2>
+        <h3> 헤딩 레벨 3</h3>
+        <h4>WYSIWYG: What You See Is What You Get 위지위그</h4>
+        <div>
+            <h1>안녕하세요</h1>            
+        </div>
+        <button class="longbutton samsung">버튼</button>
+        <button class="shortbutton">버튼2</button>
+        <br>
+        <input type = 'checkbox' name="horns" id = 'horns' />
+        <label> horns!</label>
+        <ul>        
+            <li>리스트1</li>
+            <li>리스트2</li>
+        </ul>
+
+        <ol>        
+            <li>리스트1</li>
+            <li>리스트2</li>
+        </ol>
+
+                
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <!-- 앞에 ul, ol 없으면 warning 표시-->
+
+
+        <table border="10" width="60%">
+            <thead>
+                <tr>
+                    <th>1-1</th>
+                    <th>1-2</th>
+                    <th>1-3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Left</td>
+                    <td>2-2</td>
+                    <td>2-3</td>
+                </tr>
+                <tr bgcolor="gray">
+             
+                    <td >3-2</td>
+                    <td>3-3</td>
+                </tr>
+                <tr>
+                   
+                    <td>4-2</td>
+                    <td>4-3</td>
+                </tr>
+
+            </tbody>
+            
+            <tfoot>
+                <tr bgcolor="gray">
+                    <td colspan="3">tfoot</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+<!-- input 태그는 단일이라 닫는 태그가 없음-->
+        <input />
+        <input type = "button" value="버튼" />
+        <input type = "checkbox" />
+        <input type = "date" />
+        <input type = "datetime" />
+        <input type = "color" />
+        <input type = "range" min = "0" max= "100" />
+
+        <br />
+        <hr />
+
+        <main>
+            <h1> 여기는 main 부분</h1>
+        </main>
+
+    </body>
+</html>
